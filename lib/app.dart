@@ -55,24 +55,24 @@ class _GameScreenState extends State<GameScreen> {
   final Map<String, Map<String, dynamic>> text = {
     'en': {
       'title': "HACKITTY",
-      'subtitle': "Stop the Cyber Mouse from Taking Over the Citrix Network!",
+      'subtitle': "Stop Cyber Mouse from Taking Over the Network!",
       'play': "Play",
       'pause': "Pause",
       'reset': "Reset Level",
       'level': "Level",
-      'coins': "CyberCoins",
+      'coins': "CryptoCoins",
       'skills': "Skills Unlocked",
       'caught': "Network Secured!",
       'escaped': "Mainframe Compromised!",
       'parentMode': "Ask Parents to Design a Network!",
       'instructions':
           "Program Hackitty's trace route to stop the cyber mouse from reaching the mainframe!",
-      'collectiblesTitle': "Network Security Tools & CS Concepts",
+      'collectiblesTitle': "Hacking skills",
       'howToPlayTitle': "How to Play",
       'howToPlay': [
-        "🐱 You are Hackitty, a Citrix network security specialist",
-        "🐭 Stop the AI cyborg mouse from compromising the mainframe",
-        "🔧 Collect security tools and learn CS concepts",
+        "🐱 You are Hackitty, a computer network security specialist",
+        "🐭 Stop the AI mouse from compromising the mainframe",
+        "🔧 Collect computing tokens",
         "⚡ Program your trace route using drag-and-drop commands",
         "🛡️ Secure the network before it's too late!",
       ],
@@ -81,28 +81,28 @@ class _GameScreenState extends State<GameScreen> {
       'executeProgram': "Execute Trace",
       'clearProgram': "Clear Program",
       'mainframeStatus': "Mainframe Security",
-      'networkNodes': "Citrix Network Architecture",
+      'networkNodes': "Network Topology",
     },
     'es': {
       'title': "HACKITTY",
-      'subtitle': "¡Detén al Ratón Cyber de Tomar Control de la Red Citrix!",
+      'subtitle': "¡Detén a Ciber Ratón de Tomar Control de la Red!",
       'play': "Jugar",
       'pause': "Pausa",
       'reset': "Reiniciar Nivel",
       'level': "Nivel",
-      'coins': "CiberMonedas",
+      'coins': "CriptoMonedas",
       'skills': "Habilidades Desbloqueadas",
       'caught': "¡Red Asegurada!",
       'escaped': "¡Servidor Principal Comprometido!",
       'parentMode': "¡Pide a tus Padres que Diseñen una Red!",
       'instructions':
           "¡Programa la ruta de rastreo de Hackitty para detener al ratón cyber antes de que llegue al servidor principal!",
-      'collectiblesTitle': "Herramientas de Seguridad de Red y Conceptos de CC",
+      'collectiblesTitle': "Habilidades de Hackeo",
       'howToPlayTitle': "Cómo Jugar",
       'howToPlay': [
-        "🐱 Eres Hackitty, un especialista en seguridad de redes Citrix",
-        "🐭 Detén al ratón cyborg IA de comprometer el servidor principal",
-        "🔧 Recoge herramientas de seguridad y aprende conceptos de CC",
+        "🐱 Eres Hackitty, un especialista en seguridad de redes de computadoras",
+        "🐭 Detén al ratón IA de comprometer el servidor principal",
+        "🔧 Recoge fichas de computación",
         "⚡ Programa tu ruta de rastreo usando comandos arrastrar y soltar",
         "🛡️ ¡Asegura la red antes de que sea demasiado tarde!",
       ],
@@ -111,7 +111,7 @@ class _GameScreenState extends State<GameScreen> {
       'executeProgram': "Ejecutar Rastreo",
       'clearProgram': "Limpiar Programa",
       'mainframeStatus': "Seguridad del Servidor Principal",
-      'networkNodes': "Arquitectura de Red Citrix",
+      'networkNodes': "Topología de Red",
     },
   };
 
@@ -217,14 +217,14 @@ class _GameScreenState extends State<GameScreen> {
         x: 50,
         y: 100,
         type: 'workstation',
-        name: 'Client 1',
+        name: '🖥️\nClient 1',
       ),
       NetworkNode(
         id: 'client2',
         x: 150,
         y: 100,
         type: 'workstation',
-        name: 'Client 2',
+        name: '🖥️\nClient 2',
       ),
 
       // Load Balancer Layer
@@ -233,7 +233,7 @@ class _GameScreenState extends State<GameScreen> {
         x: 100,
         y: 200,
         type: 'router',
-        name: 'Load Balancer',
+        name: '🖧\nLoad Balancer',
       ),
 
       // Citrix Gateway Layer
@@ -242,14 +242,14 @@ class _GameScreenState extends State<GameScreen> {
         x: 50,
         y: 300,
         type: 'server',
-        name: 'Citrix Gateway 1',
+        name: '🖥\nGateway 1',
       ),
       NetworkNode(
         id: 'gateway2',
         x: 150,
         y: 300,
         type: 'server',
-        name: 'Citrix Gateway 2',
+        name: '🖥\nGateway 2',
       ),
 
       // Session Host Layer
@@ -258,28 +258,28 @@ class _GameScreenState extends State<GameScreen> {
         x: 25,
         y: 400,
         type: 'server',
-        name: 'Session Host 1',
+        name: '🖥\nSession Host 1',
       ),
       NetworkNode(
         id: 'sessionhost2',
         x: 75,
         y: 400,
         type: 'server',
-        name: 'Session Host 2',
+        name: '🖥\nSession Host 2',
       ),
       NetworkNode(
         id: 'sessionhost3',
         x: 125,
         y: 400,
         type: 'server',
-        name: 'Session Host 3',
+        name: '🖥\nSession Host 3',
       ),
       NetworkNode(
         id: 'sessionhost4',
         x: 175,
         y: 400,
         type: 'server',
-        name: 'Session Host 4',
+        name: '🖥\nSession Host 4',
       ),
 
       // Database Layer
@@ -288,7 +288,7 @@ class _GameScreenState extends State<GameScreen> {
         x: 100,
         y: 500,
         type: 'server',
-        name: 'Database Server',
+        name: '🖴\nDatabase Server',
       ),
 
       // Mainframe
@@ -297,7 +297,7 @@ class _GameScreenState extends State<GameScreen> {
         x: 100,
         y: 600,
         type: 'mainframe',
-        name: 'Mainframe',
+        name: '🖥\nMainframe',
       ),
     ];
 
@@ -792,16 +792,18 @@ class _GameScreenState extends State<GameScreen> {
               color: Colors.black,
               borderRadius: BorderRadius.circular(8),
             ),
-            child: CustomPaint(
-              painter: NetworkPainter(
-                networkNodes: networkNodes,
-                networkConnections: networkConnections,
-                playerPosition: playerPosition,
-                mousePosition: mousePosition,
-                collectibles: collectibles,
-                blockedNodes: blockedNodes,
-                disconnectedNodes: disconnectedNodes,
-                mainframeCompromised: mainframeCompromised,
+            child: Center(
+              child: CustomPaint(
+                painter: NetworkPainter(
+                  networkNodes: networkNodes,
+                  networkConnections: networkConnections,
+                  playerPosition: playerPosition,
+                  mousePosition: mousePosition,
+                  collectibles: collectibles,
+                  blockedNodes: blockedNodes,
+                  disconnectedNodes: disconnectedNodes,
+                  mainframeCompromised: mainframeCompromised,
+                ),
               ),
             ),
           ),
@@ -926,48 +928,6 @@ class _GameScreenState extends State<GameScreen> {
                       fontFamily: 'monospace',
                     ),
                   ),
-                  Row(
-                    children: [
-                      ElevatedButton(
-                        onPressed:
-                            tracingProgram.isEmpty || isExecutingProgram
-                                ? null
-                                : executeTracingProgram,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green.shade600,
-                          foregroundColor: Colors.white,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12,
-                            vertical: 4,
-                          ),
-                        ),
-                        child: Text(
-                          text[language]!['executeProgram']!,
-                          style: const TextStyle(fontSize: 12),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            tracingProgram = [];
-                          });
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.red.shade600,
-                          foregroundColor: Colors.white,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12,
-                            vertical: 4,
-                          ),
-                        ),
-                        child: Text(
-                          text[language]!['clearProgram']!,
-                          style: const TextStyle(fontSize: 12),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
               const SizedBox(height: 12),
@@ -986,7 +946,9 @@ class _GameScreenState extends State<GameScreen> {
                               child: Text(
                                 'Drag commands here to build your trace program...',
                                 style: TextStyle(
-                                  color: Colors.green.shade600.withOpacity(0.5),
+                                  color: Colors.green.shade600.withValues(
+                                    alpha: 0.5,
+                                  ),
                                   fontFamily: 'monospace',
                                   fontSize: 12,
                                 ),
@@ -1000,8 +962,8 @@ class _GameScreenState extends State<GameScreen> {
                                   margin: const EdgeInsets.only(bottom: 4),
                                   padding: const EdgeInsets.all(8),
                                   decoration: BoxDecoration(
-                                    color: Colors.green.shade800.withOpacity(
-                                      0.2,
+                                    color: Colors.green.shade800.withValues(
+                                      alpha: 0.75,
                                     ),
                                     borderRadius: BorderRadius.circular(4),
                                   ),
@@ -1041,6 +1003,49 @@ class _GameScreenState extends State<GameScreen> {
                     tracingProgram = [...tracingProgram, command];
                   });
                 },
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed:
+                        tracingProgram.isEmpty || isExecutingProgram
+                            ? null
+                            : executeTracingProgram,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green.shade600,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 4,
+                      ),
+                    ),
+                    child: Text(
+                      text[language]!['executeProgram']!,
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        tracingProgram = [];
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red.shade600,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 4,
+                      ),
+                    ),
+                    child: Text(
+                      text[language]!['clearProgram']!,
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
@@ -1178,7 +1183,7 @@ class _GameScreenState extends State<GameScreen> {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.red.shade900.withOpacity(0.2),
+                        color: Colors.red.shade900.withValues(alpha: 0.75),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Text(
@@ -1220,6 +1225,10 @@ class _GameScreenState extends State<GameScreen> {
                     ElevatedButton(
                       onPressed: () => setState(() => language = 'en'),
                       style: ElevatedButton.styleFrom(
+                        foregroundColor:
+                            language == 'en'
+                                ? const Color.fromARGB(255, 1, 22, 53)
+                                : Colors.cyan.shade600,
                         backgroundColor:
                             language == 'en'
                                 ? Colors.cyan.shade600
@@ -1231,6 +1240,10 @@ class _GameScreenState extends State<GameScreen> {
                     ElevatedButton(
                       onPressed: () => setState(() => language = 'es'),
                       style: ElevatedButton.styleFrom(
+                        foregroundColor:
+                            language == 'es'
+                                ? Color.fromARGB(255, 1, 22, 53)
+                                : Colors.cyan.shade600,
                         backgroundColor:
                             language == 'es'
                                 ? Colors.cyan.shade600
@@ -1244,6 +1257,7 @@ class _GameScreenState extends State<GameScreen> {
                 ElevatedButton(
                   onPressed: () => setState(() => gameState = 'playing'),
                   style: ElevatedButton.styleFrom(
+                    foregroundColor: Color.fromARGB(255, 1, 22, 53),
                     backgroundColor: Colors.cyan.shade600,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 32,
@@ -1448,6 +1462,7 @@ class _GameScreenState extends State<GameScreen> {
                                         : 'playing';
                               }),
                           style: ElevatedButton.styleFrom(
+                            foregroundColor: Color.fromARGB(255, 1, 22, 53),
                             backgroundColor: Colors.cyan.shade600,
                           ),
                           child: Row(
@@ -1545,7 +1560,7 @@ class _GameScreenState extends State<GameScreen> {
         return Stack(
           children: [
             buildGameScreen(),
-            ModalBarrier(color: Colors.black.withOpacity(0.75)),
+            ModalBarrier(color: Colors.black.withValues(alpha: 0.75)),
             Center(
               child: Container(
                 padding: const EdgeInsets.all(32),
@@ -1628,7 +1643,7 @@ class _GameScreenState extends State<GameScreen> {
         return Stack(
           children: [
             buildGameScreen(),
-            ModalBarrier(color: Colors.black.withOpacity(0.75)),
+            ModalBarrier(color: Colors.black.withValues(alpha: 0.75)),
             Center(
               child: Container(
                 padding: const EdgeInsets.all(32),
@@ -1741,6 +1756,7 @@ class NetworkPainter extends CustomPainter {
       final isBlocked =
           blockedNodes.contains(conn.from) || blockedNodes.contains(conn.to);
 
+      // Draw connection line
       final paint =
           Paint()
             ..color =
@@ -1754,7 +1770,7 @@ class NetworkPainter extends CustomPainter {
                     ? 1
                     : isBlocked
                     ? 3
-                    : 2
+                    : 10
             ..style = PaintingStyle.stroke;
 
       if (isDisconnected) {
@@ -1813,7 +1829,7 @@ class NetworkPainter extends CustomPainter {
 
       canvas.drawCircle(
         Offset(node.x.toDouble(), node.y.toDouble()),
-        20, // Larger node size
+        40, // Larger node size
         nodePaint,
       );
 
@@ -1831,7 +1847,7 @@ class NetworkPainter extends CustomPainter {
 
       canvas.drawCircle(
         Offset(node.x.toDouble(), node.y.toDouble()),
-        20, // Larger node size
+        40, // Larger node size
         borderPaint,
       );
 
@@ -1840,7 +1856,7 @@ class NetworkPainter extends CustomPainter {
         final shieldPaint =
             Paint()
               ..color = Colors.yellow.shade400
-              ..strokeWidth = 2
+              ..strokeWidth = 5
               ..style = PaintingStyle.stroke;
 
         final dashPath =
@@ -1856,7 +1872,7 @@ class NetworkPainter extends CustomPainter {
         final dashPaint =
             Paint()
               ..color = Colors.yellow.shade400
-              ..strokeWidth = 2
+              ..strokeWidth = 5
               ..style = PaintingStyle.stroke;
         //..pathEffect = PathEffect.dashPathEffect([3, 3], 0);
 
@@ -1867,9 +1883,10 @@ class NetworkPainter extends CustomPainter {
       final textPainter = TextPainter(
         text: TextSpan(
           text: node.name,
-          style: const TextStyle(color: Colors.white, fontSize: 10),
+          style: const TextStyle(color: Colors.white, fontSize: 20),
         ),
         textDirection: TextDirection.ltr,
+        textAlign: TextAlign.center,
       );
       textPainter.layout();
       textPainter.paint(
